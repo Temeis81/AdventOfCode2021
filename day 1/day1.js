@@ -15,7 +15,6 @@ function compareDepths(){
                     var currentSetValue = parseInt(currentValue) + parseInt(depthValues[index-1]) + parseInt(depthValues[index-2]);
                     var prevSetValue = parseInt(depthValues[index - 1]) + parseInt(depthValues[index - 2]) + parseInt(depthValues[index - 3]);
                     if (Number.isFinite(currentSetValue) && currentSetValue > prevSetValue){
-                      console.log(currentSetValue, prevSetValue);
                       greaterThanTripIs ++;
                     }
                   }
